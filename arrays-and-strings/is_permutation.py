@@ -1,7 +1,7 @@
 import unittest
 
 def is_permutation(str1, str2):
-
+    '''Check if strings are permutations of each other'''
     # use dictionary
     # runtime = O(n)
     if len(str1) != len(str2):
@@ -23,6 +23,7 @@ def is_permutation(str1, str2):
 
 
 class Test(unittest.TestCase):
+    '''Test Cases'''
     test1 = (
         ('abcd', 'bacd'),
         ('123456', '564312'),

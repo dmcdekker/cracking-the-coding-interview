@@ -1,7 +1,10 @@
 import unittest
 
-def is_unique(string):
+# Implement algorithm to determine if string has all unique chars
+# What if you cannot use additional data structures?
 
+def is_unique(string):
+    '''Check if string contains unique characters'''
     # for ASCII char set
     if len(string) > 128:
         return False
@@ -11,7 +14,6 @@ def is_unique(string):
     if len(string) > len(set(string)):
         return False
     return True
-
 
     # using while loop
     # runtime: O(n)

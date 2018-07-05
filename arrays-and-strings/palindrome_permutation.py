@@ -1,13 +1,14 @@
 import unittest
 
 def palindrome_permutation(string):
+    '''Check if string is permutation of a palindrome'''
     count_letters = {}
-    for letter in string:
-        count_letters[letter] = count_letters.get(letter, 0) + 1
-
+    for letter in string.lower():
+        if letter != ' ':
+            count_letters[letter] = count_letters.get(letter, 0) + 1
     count = 0
-    for key, values in count_letters.iteritems():
-        if values % 2 == 0:
+    for letter, number in count_letters.iteritems():
+        if number % 2 != 0:
             count += 1
     return count <= 1
 

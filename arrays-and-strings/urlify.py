@@ -4,10 +4,7 @@ import unittest
 
 
 def urlify_1(string, length):
-    '''Write method to replace all spaces in a string with %20.
-        May assume there's enough space at the end to hold the
-        additional chars and that you are given the true length
-        of the string'''
+    '''Replace all spaces in a string with %20'''
     
     new_index = len(string)
 
