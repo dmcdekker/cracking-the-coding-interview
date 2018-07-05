@@ -17,13 +17,9 @@ def is_permutation(str1, str2):
 
     return True
 
-        
-
     # sort and compare
     # Runtime = O(n)
     # return sorted(str1) == sorted(str2)
-
-
 
 
 class Test(unittest.TestCase):
