@@ -8,9 +8,9 @@ class Test(unittest.TestCase):
     '''Test Cases'''
 
     data = [
-        (('much ado about nothing      '), 22,
-         ('much%20ado%20about%20nothing')),
-        (('Mr John Smith    '), 13, ('Mr%20John%20Smith'))]
+        (('this is my testy test      '), 29,
+         ('this%20is%20my%20testy%20test')),
+        (('Ms Jenn Black    '), 13, ('Ms%20Jenn%20Black'))]
 
     def test_urlify(self):
         for [test_string, length, expected] in self.data:
