@@ -1,6 +1,7 @@
 import unittest
 
 def one_away(str1, str2):
+    '''Check if strings are one edit away from being equal'''
 
     diff = len(str1) - len(str2)
 
