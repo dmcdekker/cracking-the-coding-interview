@@ -5,12 +5,14 @@ import unittest
 
 def is_unique(string):
     '''Check if string contains unique characters'''
+    
     # for ASCII char set
     if len(string) > 128:
         return False
 
     # use set
     # runtime: O(n)
+    
     if len(string) > len(set(string)):
         return False
     return True

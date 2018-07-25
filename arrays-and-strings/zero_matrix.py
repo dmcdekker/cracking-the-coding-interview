@@ -23,7 +23,8 @@ def zero_matrix(matrix):
 
     return matrix  
     
-
+    
+    # Runtime = O(n^2)
     
 
 

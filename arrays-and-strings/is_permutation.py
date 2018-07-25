@@ -19,6 +19,8 @@ def is_permutation(str1, str2):
 
     # sort and compare
     # Runtime = O(n)
+    
+    # using Python built-in methods:
     # return sorted(str1) == sorted(str2)
 
 

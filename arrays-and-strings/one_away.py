@@ -4,7 +4,7 @@ def one_away(str1, str2):
     '''Check if strings are one edit away from being equal'''
 
     diff = len(str1) - len(str2)
-
+    # three cases
     # difference greater than 1
     if abs(diff) > 1:
         return False
@@ -27,12 +27,13 @@ def one_away(str1, str2):
             if str1[idx] == str2[idx]:
                 continue
             else:
-                count += 1
-                
+                count += 1       
         if count > 1:
             return False
 
     return True
+
+    # Runtime = O(n)
 
 class Test(unittest.TestCase):
     '''Test Cases'''

@@ -1,17 +1,18 @@
 import unittest
 
 def rotate_matrix(matrix):
-    '''Rotate matrix by 90 degrees'''
+    '''Rotate matrix left by 90 degrees'''
     outer = []
     inner = []
-
+    # iterate through matrix to get first number of last inner array
     for idx in range(0, len(matrix)):
         for i, row in enumerate(matrix[::-1]):
+            # append to inner arr
             inner.append(row[idx])
+        # append content to outer array
         outer.extend([inner])    
         inner = []         
     return outer
-
 
 
 class Test(unittest.TestCase):
