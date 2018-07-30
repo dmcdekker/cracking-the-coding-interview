@@ -69,6 +69,6 @@ ll1.add_node(6)
 ll2.add_node(5)
 ll2.add_node(9)
 ll2.add_node(2)
-print sum_lists(ll1, ll2)
+sum_lists(ll1, ll2)
 
 
