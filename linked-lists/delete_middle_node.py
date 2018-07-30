@@ -38,7 +38,9 @@ class LinkedList(object):
 def delete_middle_node(node):
     if not node.next:
         raise ValueError('Cannot remove tail node')
+    # copy data of next node to node
     node.data = node.next.data
+    # point to node after next node
     node.next = node.next.next
 
 
