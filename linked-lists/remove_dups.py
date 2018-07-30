@@ -73,6 +73,7 @@ def remove_dups_followup(ll):
 
     return ll
 
+
 #----with buffer-----
 ll = LinkedList()
 ll.add_node(100)
@@ -80,6 +81,7 @@ ll.add_node(20)
 ll.add_node(10)
 ll.add_node(100)
 remove_dups(ll)
+print '______remove_dups______'
 ll.list_print()
 
 #----without buffer-----
@@ -89,5 +91,6 @@ ll.add_node(20)
 ll.add_node(300)
 ll.add_node(10)
 remove_dups_followup(ll)
+print '______remove_dups_followup______'
 ll.list_print()
 # print(ll)
