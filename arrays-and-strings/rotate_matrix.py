@@ -5,8 +5,10 @@ def rotate_matrix(matrix):
     outer = []
     inner = []
     # iterate through matrix to get first number of last inner array
-    for idx in range(0, len(matrix)):
-        for i, row in enumerate(matrix[::-1]):
+    for idx in range(len(matrix)):
+        # print idx
+        for row in matrix[::-1]:
+            print row[idx], '/'
             # append to inner arr
             inner.append(row[idx])
         # append content to outer array

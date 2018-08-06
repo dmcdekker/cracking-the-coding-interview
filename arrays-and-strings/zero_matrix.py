@@ -4,14 +4,15 @@ def zero_matrix(matrix):
     '''Given an NxM matrix find the rows that contain a zero.'''
     zero_row = []
     zero_col = []
+    # iterate through rows and cols to find zero value
     for row_num, row in enumerate(matrix):
         for col_num, element in enumerate(row):
+            # if found: note row and col indices
             if element == 0:
                 zero_row.append(row_num)
                 zero_col.append(col_num)
 
-
-    #zero out rows
+    # zero out rows
     for row in zero_row:
         for row_num in range(len(matrix[row])):
             matrix[row][row_num] = 0
@@ -22,8 +23,7 @@ def zero_matrix(matrix):
             matrix[col_num][col] = 0
 
     return matrix  
-    
-    
+     
     # Runtime = O(n^2)
     
 

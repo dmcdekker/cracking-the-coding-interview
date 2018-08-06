@@ -16,14 +16,14 @@ def one_away(str1, str2):
                 if letter not in str2:
                     return False
         else:
-            for letter in str1:
-                if letter not in str2:
+            for letter in str2:
+                if letter not in str1:
                     return False
 
     # no difference in length
     else:
         count = 0
-        for idx in range(len(str2)):
+        for idx, letter in enumerate(str1):
             if str1[idx] == str2[idx]:
                 continue
             else:
