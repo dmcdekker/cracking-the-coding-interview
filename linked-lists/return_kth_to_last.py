@@ -49,7 +49,8 @@ def return_kth_to_last(ll, k):
     current = ll.head
     # iterate through list to find correct element
     for i in range(steps):
-        current = current.next
+        print i
+        # current = current.next
         
     return current.data
 
